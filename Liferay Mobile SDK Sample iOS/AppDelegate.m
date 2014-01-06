@@ -8,10 +8,11 @@
 
 	CGRect frame = [[UIScreen mainScreen] bounds];
 
-	MainViewController *controller = [[MainViewController alloc] init];
-	
 	self.window = [[UIWindow alloc] initWithFrame:frame];
 
+	MainViewController *controller = [[MainViewController alloc] init];
+
+	[self.window setRootViewController:controller];
 	[self.window setBackgroundColor:[UIColor whiteColor]];
 	[self.window makeKeyAndVisible];
 

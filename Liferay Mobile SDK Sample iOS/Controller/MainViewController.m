@@ -3,9 +3,11 @@
 @implementation MainViewController
 
 - (id)init {
-	self = [super init];
+	self = [super initWithStyle:UITableViewStylePlain];
 
 	if (self) {
+		self.users = [[NSMutableArray alloc] init];
+
 		LRSession *session = [SettingsUtil getSession];
 		LRUserService_v62 *service = [[LRUserService_v62 alloc] init:session];
 		NSError *error;
@@ -20,7 +22,9 @@
 		}
 
 		for (int i = 0; i < [users count]; i++) {
-			NSLog(@"User: %@", [users objectAtIndex:i]);
+			User *user = [[User alloc] init:[users objectAtIndex:i]];
+
+			[self.users addObject:user];
 		}
 	}
 
@@ -28,13 +32,13 @@
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-	return 0;
+	return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView
  		numberOfRowsInSection:(NSInteger)section {
 
-	return 0;
+	return [self.users count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView
@@ -42,8 +46,18 @@
 
 	static NSString *identifier = @"Cell";
 
-	UITableViewCell *cell = [tableView
-		dequeueReusableCellWithIdentifier:identifier forIndexPath:indexPath];
+	UITableViewCell *cell =
+		[tableView dequeueReusableCellWithIdentifier:identifier];
+
+	if (cell == nil) {
+		cell = [[UITableViewCell alloc]
+			initWithStyle:UITableViewCellStyleDefault
+			reuseIdentifier:identifier];
+    }
+
+	User *user = [self.users objectAtIndex:indexPath.row];
+
+	[cell.textLabel setText:user.name];
 
     return cell;
 }
