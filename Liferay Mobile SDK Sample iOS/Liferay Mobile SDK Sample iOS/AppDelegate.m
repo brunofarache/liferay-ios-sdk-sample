@@ -1,4 +1,5 @@
 #import "AppDelegate.h"
+#import "MainViewController.h"
 
 @implementation AppDelegate
 
@@ -7,6 +8,8 @@
 
 	CGRect frame = [[UIScreen mainScreen] bounds];
 
+	MainViewController *controller = [[MainViewController alloc] init];
+	
 	self.window = [[UIWindow alloc] initWithFrame:frame];
 
 	[self.window setBackgroundColor:[UIColor whiteColor]];
