@@ -7,13 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CC2D992A187B7BC400DEEA56 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CC2D9928187B7BC400DEEA56 /* main.m */; };
+		CC2D992C187B7C4000DEEA56 /* Liferay Mobile SDK Sample iOS-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CC2D992B187B7C4000DEEA56 /* Liferay Mobile SDK Sample iOS-Info.plist */; };
 		CC8E4C87187228E40034121D /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC8E4C86187228E40034121D /* MainViewController.m */; };
 		CC90AF01187B326B003C68B0 /* SettingsUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = CC90AF00187B326B003C68B0 /* SettingsUtil.m */; };
 		CC90AF05187B4E12003C68B0 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = CC90AF04187B4E12003C68B0 /* User.m */; };
 		CCE0A0141872213C00B1D023 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCE0A0131872213C00B1D023 /* Foundation.framework */; };
 		CCE0A0161872213C00B1D023 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCE0A0151872213C00B1D023 /* CoreGraphics.framework */; };
 		CCE0A0181872213C00B1D023 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCE0A0171872213C00B1D023 /* UIKit.framework */; };
-		CCE0A0201872213C00B1D023 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CCE0A01F1872213C00B1D023 /* main.m */; };
 		CCE0A0241872213C00B1D023 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CCE0A0231872213C00B1D023 /* AppDelegate.m */; };
 		CCE0A0261872213C00B1D023 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CCE0A0251872213C00B1D023 /* Images.xcassets */; };
 		CCE0A02E1872213C00B1D023 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCE0A0131872213C00B1D023 /* Foundation.framework */; };
@@ -130,6 +131,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CC2D9927187B7BC400DEEA56 /* Liferay Mobile SDK Sample iOS-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Liferay Mobile SDK Sample iOS-Prefix.pch"; sourceTree = "<group>"; };
+		CC2D9928187B7BC400DEEA56 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CC2D992B187B7C4000DEEA56 /* Liferay Mobile SDK Sample iOS-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Liferay Mobile SDK Sample iOS-Info.plist"; sourceTree = "<group>"; };
 		CC8E4C85187228E40034121D /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainViewController.h; path = Controller/MainViewController.h; sourceTree = "<group>"; };
 		CC8E4C86187228E40034121D /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MainViewController.m; path = Controller/MainViewController.m; sourceTree = "<group>"; };
 		CC90AEFF187B326B003C68B0 /* SettingsUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SettingsUtil.h; path = Util/SettingsUtil.h; sourceTree = "<group>"; };
@@ -140,12 +144,9 @@
 		CCE0A0131872213C00B1D023 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		CCE0A0151872213C00B1D023 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		CCE0A0171872213C00B1D023 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		CCE0A01B1872213C00B1D023 /* Liferay Mobile SDK Sample iOS-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Liferay Mobile SDK Sample iOS-Info.plist"; sourceTree = "<group>"; };
-		CCE0A01F1872213C00B1D023 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		CCE0A0211872213C00B1D023 /* Liferay Mobile SDK Sample iOS-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Liferay Mobile SDK Sample iOS-Prefix.pch"; sourceTree = "<group>"; };
 		CCE0A0221872213C00B1D023 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		CCE0A0231872213C00B1D023 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		CCE0A0251872213C00B1D023 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		CCE0A0251872213C00B1D023 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = SOURCE_ROOT; };
 		CCE0A02B1872213C00B1D023 /* Liferay Mobile SDK Sample iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Liferay Mobile SDK Sample iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCE0A0451872256000B1D023 /* LRBaseService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LRBaseService.h; sourceTree = "<group>"; };
 		CCE0A0461872256000B1D023 /* LRBatchSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LRBatchSession.h; sourceTree = "<group>"; };
@@ -432,24 +433,16 @@
 				CC8E4C88187228EC0034121D /* Controller */,
 				CCE0A0421872256000B1D023 /* Liferay Mobile SDK */,
 				CC90AF02187B4DF7003C68B0 /* Model */,
-				CCE0A01A1872213C00B1D023 /* Supporting Files */,
 				CC90AEFE187B3227003C68B0 /* Util */,
 				CCE0A0251872213C00B1D023 /* Images.xcassets */,
 				CCE0A0221872213C00B1D023 /* AppDelegate.h */,
 				CCE0A0231872213C00B1D023 /* AppDelegate.m */,
+				CC2D992B187B7C4000DEEA56 /* Liferay Mobile SDK Sample iOS-Info.plist */,
+				CC2D9927187B7BC400DEEA56 /* Liferay Mobile SDK Sample iOS-Prefix.pch */,
+				CC2D9928187B7BC400DEEA56 /* main.m */,
 			);
-			path = "Liferay Mobile SDK Sample iOS";
-			sourceTree = "<group>";
-		};
-		CCE0A01A1872213C00B1D023 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				CCE0A01B1872213C00B1D023 /* Liferay Mobile SDK Sample iOS-Info.plist */,
-				CCE0A01F1872213C00B1D023 /* main.m */,
-				CCE0A0211872213C00B1D023 /* Liferay Mobile SDK Sample iOS-Prefix.pch */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
+			name = "Liferay Mobile SDK Sample iOS";
+			sourceTree = SOURCE_ROOT;
 		};
 		CCE0A0421872256000B1D023 /* Liferay Mobile SDK */ = {
 			isa = PBXGroup;
@@ -780,6 +773,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC2D992C187B7C4000DEEA56 /* Liferay Mobile SDK Sample iOS-Info.plist in Resources */,
 				CCE0A0261872213C00B1D023 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -823,7 +817,6 @@
 				CCE0A12B1872256000B1D023 /* LRDDMTemplateService_v62.m in Sources */,
 				CCE0A1111872256000B1D023 /* LRBaseService.m in Sources */,
 				CCE0A1231872256000B1D023 /* LRBookmarksFolderService_v62.m in Sources */,
-				CCE0A0201872213C00B1D023 /* main.m in Sources */,
 				CCE0A14C1872256000B1D023 /* LRMDRRuleService_v62.m in Sources */,
 				CCE0A1571872256000B1D023 /* LRPortletPreferencesService_v62.m in Sources */,
 				CCE0A1621872256000B1D023 /* LRSCProductVersionService_v62.m in Sources */,
@@ -877,6 +870,7 @@
 				CCE0A1681872256000B1D023 /* LRSocialActivitySettingService_v62.m in Sources */,
 				CCE0A1291872256000B1D023 /* LRDDLRecordSetService_v62.m in Sources */,
 				CCE0A1541872256000B1D023 /* LRPollsQuestionService_v62.m in Sources */,
+				CC2D992A187B7BC400DEEA56 /* main.m in Sources */,
 				CCE0A1371872256000B1D023 /* LRImageService_v62.m in Sources */,
 				CCE0A12A1872256000B1D023 /* LRDDMStructureService_v62.m in Sources */,
 				CCE0A1171872256000B1D023 /* LRAnnouncementsDeliveryService_v62.m in Sources */,
@@ -1001,8 +995,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Liferay Mobile SDK Sample iOS/Liferay Mobile SDK Sample iOS-Prefix.pch";
-				INFOPLIST_FILE = "Liferay Mobile SDK Sample iOS/Liferay Mobile SDK Sample iOS-Info.plist";
+				GCC_PREFIX_HEADER = "Liferay Mobile SDK Sample iOS-Prefix.pch";
+				INFOPLIST_FILE = "Liferay Mobile SDK Sample iOS-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -1014,8 +1008,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Liferay Mobile SDK Sample iOS/Liferay Mobile SDK Sample iOS-Prefix.pch";
-				INFOPLIST_FILE = "Liferay Mobile SDK Sample iOS/Liferay Mobile SDK Sample iOS-Info.plist";
+				GCC_PREFIX_HEADER = "Liferay Mobile SDK Sample iOS-Prefix.pch";
+				INFOPLIST_FILE = "Liferay Mobile SDK Sample iOS-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
