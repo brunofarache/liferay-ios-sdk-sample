@@ -54,7 +54,7 @@
 
 	[cell.textLabel setText:user.name];
 
-    return cell;
+	return cell;
 }
 
 - (void)tableView:(UITableView *)tableView
@@ -83,7 +83,7 @@
 		classPK:user.contactId error:&error];
 
 	[batch invoke:&error];
-	
+
 	if (error) {
 		NSLog(@"Error: %@", error);
 

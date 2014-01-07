@@ -7,12 +7,12 @@
 
 	self = [super init];
 
-    if (self) {
+	if (self) {
 		self.user = user;
 		self.navigationController = navigationController;
-    }
+	}
 
-    return self;
+	return self;
 }
 
 - (void)onFailure:(NSError *)error {

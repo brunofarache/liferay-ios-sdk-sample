@@ -3,17 +3,17 @@
 @implementation DetailsViewController
 
 - (id)init:(User *)user {
-    self = [super initWithStyle:UITableViewStyleGrouped];
+	self = [super initWithStyle:UITableViewStyleGrouped];
 
-    if (self) {
+	if (self) {
 		self.user = user;
-    }
+	}
 
-    return self;
+	return self;
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    return 4;
+	return 4;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView
@@ -29,7 +29,7 @@
 		return [phones count];
 	}
 
-    return 1;
+	return 1;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView
@@ -62,13 +62,13 @@
 		NSArray *phones = self.user.contact.phones;
 
 		if ([phones count] > 0) {
-			text = [self.user.contact.phones objectAtIndex:indexPath.row];
+			text = [phones objectAtIndex:indexPath.row];
 		}
 	}
 
 	[cell.textLabel setText:text];
 
-    return cell;
+	return cell;
 }
 
 - (NSString *)tableView:(UITableView *)tableView
