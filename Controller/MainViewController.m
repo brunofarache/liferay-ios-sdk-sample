@@ -65,7 +65,9 @@
 	LRBatchSession *batch = [[LRBatchSession alloc]
 		init:[SettingsUtil getSession]];
 
-	ContactCallback *callback = [[ContactCallback alloc] init];
+	ContactCallback *callback = [[ContactCallback alloc]
+		init:user navigationController:self.navigationController];
+
 	[batch setCallback:callback];
 
 	LRContactService_v62 *contactService = [[LRContactService_v62 alloc]

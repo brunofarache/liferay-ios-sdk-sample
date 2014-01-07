@@ -120,6 +120,7 @@
 		CCE0A1731872256000B1D023 /* LRWikiNodeService_v62.m in Sources */ = {isa = PBXBuildFile; fileRef = CCE0A10F1872256000B1D023 /* LRWikiNodeService_v62.m */; };
 		CCE0A1741872256000B1D023 /* LRWikiPageService_v62.m in Sources */ = {isa = PBXBuildFile; fileRef = CCE0A1101872256000B1D023 /* LRWikiPageService_v62.m */; };
 		CCE967C1187C72EA006272B5 /* Contact.m in Sources */ = {isa = PBXBuildFile; fileRef = CCE967C0187C72EA006272B5 /* Contact.m */; };
+		CCE967C4187C933F006272B5 /* DetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CCE967C3187C933F006272B5 /* DetailsViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -353,6 +354,8 @@
 		CCE0A1101872256000B1D023 /* LRWikiPageService_v62.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LRWikiPageService_v62.m; sourceTree = "<group>"; };
 		CCE967BF187C72EA006272B5 /* Contact.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Contact.h; path = Model/Contact.h; sourceTree = "<group>"; };
 		CCE967C0187C72EA006272B5 /* Contact.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Contact.m; path = Model/Contact.m; sourceTree = "<group>"; };
+		CCE967C2187C933F006272B5 /* DetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DetailsViewController.h; path = Controller/DetailsViewController.h; sourceTree = "<group>"; };
+		CCE967C3187C933F006272B5 /* DetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DetailsViewController.m; path = Controller/DetailsViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -390,6 +393,8 @@
 		CC8E4C88187228EC0034121D /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				CCE967C2187C933F006272B5 /* DetailsViewController.h */,
+				CCE967C3187C933F006272B5 /* DetailsViewController.m */,
 				CC8E4C85187228E40034121D /* MainViewController.h */,
 				CC8E4C86187228E40034121D /* MainViewController.m */,
 			);
@@ -908,6 +913,7 @@
 				CCE0A16A1872256000B1D023 /* LRStagingService_v62.m in Sources */,
 				CCE0A15C1872256000B1D023 /* LRResourceBlockService_v62.m in Sources */,
 				CCE0A11E1872256000B1D023 /* LRAssetTagService_v62.m in Sources */,
+				CCE967C4187C933F006272B5 /* DetailsViewController.m in Sources */,
 				CCE0A1661872256000B1D023 /* LRShoppingOrderService_v62.m in Sources */,
 				CCE0A15A1872256000B1D023 /* LRRegionService_v62.m in Sources */,
 				CCE0A1361872256000B1D023 /* LRGroupService_v62.m in Sources */,
