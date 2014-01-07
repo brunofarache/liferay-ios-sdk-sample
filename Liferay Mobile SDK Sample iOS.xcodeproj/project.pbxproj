@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		CC2D992A187B7BC400DEEA56 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CC2D9928187B7BC400DEEA56 /* main.m */; };
 		CC2D992C187B7C4000DEEA56 /* Liferay Mobile SDK Sample iOS-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CC2D992B187B7C4000DEEA56 /* Liferay Mobile SDK Sample iOS-Info.plist */; };
+		CC694B9C187C3AD300EDA039 /* ContactCallback.m in Sources */ = {isa = PBXBuildFile; fileRef = CC694B9B187C3AD200EDA039 /* ContactCallback.m */; };
 		CC8E4C87187228E40034121D /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC8E4C86187228E40034121D /* MainViewController.m */; };
 		CC90AF01187B326B003C68B0 /* SettingsUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = CC90AF00187B326B003C68B0 /* SettingsUtil.m */; };
 		CC90AF05187B4E12003C68B0 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = CC90AF04187B4E12003C68B0 /* User.m */; };
@@ -118,6 +119,7 @@
 		CCE0A1721872256000B1D023 /* LRWebsiteService_v62.m in Sources */ = {isa = PBXBuildFile; fileRef = CCE0A10E1872256000B1D023 /* LRWebsiteService_v62.m */; };
 		CCE0A1731872256000B1D023 /* LRWikiNodeService_v62.m in Sources */ = {isa = PBXBuildFile; fileRef = CCE0A10F1872256000B1D023 /* LRWikiNodeService_v62.m */; };
 		CCE0A1741872256000B1D023 /* LRWikiPageService_v62.m in Sources */ = {isa = PBXBuildFile; fileRef = CCE0A1101872256000B1D023 /* LRWikiPageService_v62.m */; };
+		CCE967C1187C72EA006272B5 /* Contact.m in Sources */ = {isa = PBXBuildFile; fileRef = CCE967C0187C72EA006272B5 /* Contact.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -134,6 +136,8 @@
 		CC2D9927187B7BC400DEEA56 /* Liferay Mobile SDK Sample iOS-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Liferay Mobile SDK Sample iOS-Prefix.pch"; sourceTree = "<group>"; };
 		CC2D9928187B7BC400DEEA56 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		CC2D992B187B7C4000DEEA56 /* Liferay Mobile SDK Sample iOS-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Liferay Mobile SDK Sample iOS-Info.plist"; sourceTree = "<group>"; };
+		CC694B9A187C3AD200EDA039 /* ContactCallback.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ContactCallback.h; path = Callback/ContactCallback.h; sourceTree = "<group>"; };
+		CC694B9B187C3AD200EDA039 /* ContactCallback.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ContactCallback.m; path = Callback/ContactCallback.m; sourceTree = "<group>"; };
 		CC8E4C85187228E40034121D /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainViewController.h; path = Controller/MainViewController.h; sourceTree = "<group>"; };
 		CC8E4C86187228E40034121D /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MainViewController.m; path = Controller/MainViewController.m; sourceTree = "<group>"; };
 		CC90AEFF187B326B003C68B0 /* SettingsUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SettingsUtil.h; path = Util/SettingsUtil.h; sourceTree = "<group>"; };
@@ -347,6 +351,8 @@
 		CCE0A10E1872256000B1D023 /* LRWebsiteService_v62.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LRWebsiteService_v62.m; sourceTree = "<group>"; };
 		CCE0A10F1872256000B1D023 /* LRWikiNodeService_v62.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LRWikiNodeService_v62.m; sourceTree = "<group>"; };
 		CCE0A1101872256000B1D023 /* LRWikiPageService_v62.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LRWikiPageService_v62.m; sourceTree = "<group>"; };
+		CCE967BF187C72EA006272B5 /* Contact.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Contact.h; path = Model/Contact.h; sourceTree = "<group>"; };
+		CCE967C0187C72EA006272B5 /* Contact.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Contact.m; path = Model/Contact.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -372,6 +378,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CC694B99187C3AAF00EDA039 /* Callback */ = {
+			isa = PBXGroup;
+			children = (
+				CC694B9A187C3AD200EDA039 /* ContactCallback.h */,
+				CC694B9B187C3AD200EDA039 /* ContactCallback.m */,
+			);
+			name = Callback;
+			sourceTree = "<group>";
+		};
 		CC8E4C88187228EC0034121D /* Controller */ = {
 			isa = PBXGroup;
 			children = (
@@ -393,6 +408,8 @@
 		CC90AF02187B4DF7003C68B0 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				CCE967BF187C72EA006272B5 /* Contact.h */,
+				CCE967C0187C72EA006272B5 /* Contact.m */,
 				CC90AF03187B4E12003C68B0 /* User.h */,
 				CC90AF04187B4E12003C68B0 /* User.m */,
 			);
@@ -430,6 +447,7 @@
 		CCE0A0191872213C00B1D023 /* Liferay Mobile SDK Sample iOS */ = {
 			isa = PBXGroup;
 			children = (
+				CC694B99187C3AAF00EDA039 /* Callback */,
 				CC8E4C88187228EC0034121D /* Controller */,
 				CCE0A0421872256000B1D023 /* Liferay Mobile SDK */,
 				CC90AF02187B4DF7003C68B0 /* Model */,
@@ -795,6 +813,7 @@
 				CC90AF05187B4E12003C68B0 /* User.m in Sources */,
 				CCE0A1461872256000B1D023 /* LRMBCategoryService_v62.m in Sources */,
 				CCE0A16F1872256000B1D023 /* LRUserGroupRoleService_v62.m in Sources */,
+				CC694B9C187C3AD300EDA039 /* ContactCallback.m in Sources */,
 				CCE0A1221872256000B1D023 /* LRBookmarksEntryService_v62.m in Sources */,
 				CCE0A12D1872256000B1D023 /* LRDLFileEntryService_v62.m in Sources */,
 				CCE0A1321872256000B1D023 /* LREmailAddressService_v62.m in Sources */,
@@ -869,6 +888,7 @@
 				CCE0A11A1872256000B1D023 /* LRAssetCategoryPropertyService_v62.m in Sources */,
 				CCE0A1681872256000B1D023 /* LRSocialActivitySettingService_v62.m in Sources */,
 				CCE0A1291872256000B1D023 /* LRDDLRecordSetService_v62.m in Sources */,
+				CCE967C1187C72EA006272B5 /* Contact.m in Sources */,
 				CCE0A1541872256000B1D023 /* LRPollsQuestionService_v62.m in Sources */,
 				CC2D992A187B7BC400DEEA56 /* main.m in Sources */,
 				CCE0A1371872256000B1D023 /* LRImageService_v62.m in Sources */,

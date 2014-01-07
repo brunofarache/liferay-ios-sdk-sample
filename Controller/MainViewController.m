@@ -9,10 +9,11 @@
 		self.users = [[NSMutableArray alloc] init];
 
 		LRSession *session = [SettingsUtil getSession];
-		LRUserService_v62 *service = [[LRUserService_v62 alloc] init:session];
-		NSError *error;
 
 		int groupId = [self _getGuestGroupId:session];
+
+		LRUserService_v62 *service = [[LRUserService_v62 alloc] init:session];
+		NSError *error;
 
 		NSArray *users = [service getGroupUsersWithGroupId:groupId
 			error:&error];
@@ -33,12 +34,6 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
 	return 1;
-}
-
-- (NSInteger)tableView:(UITableView *)tableView
- 		numberOfRowsInSection:(NSInteger)section {
-
-	return [self.users count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView
@@ -62,8 +57,47 @@
     return cell;
 }
 
+- (void)tableView:(UITableView *)tableView
+		didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+
+	User *user = [self.users objectAtIndex:indexPath.row];
+
+	LRBatchSession *batch = [[LRBatchSession alloc]
+		init:[SettingsUtil getSession]];
+
+	ContactCallback *callback = [[ContactCallback alloc] init];
+	[batch setCallback:callback];
+
+	LRContactService_v62 *contactService = [[LRContactService_v62 alloc]
+		init:batch];
+
+	NSError *error;
+
+	[contactService getContactWithContactId:user.contactId error:&error];
+
+	LRPhoneService_v62 *phoneService = [[LRPhoneService_v62 alloc] init:batch];
+
+	[phoneService getPhonesWithClassName:@"com.liferay.portal.model.Contact"
+		classPK:user.contactId error:&error];
+
+	[batch invoke:&error];
+	
+	if (error) {
+		NSLog(@"Error: %@", error);
+
+		return;
+	}
+}
+
+- (NSInteger)tableView:(UITableView *)tableView
+ 		numberOfRowsInSection:(NSInteger)section {
+
+	return [self.users count];
+}
+
 - (int)_getGuestGroupId:(LRSession *)session {
 	NSNumber *groupId = [NSNumber numberWithInt:-1];
+
 	LRGroupService_v62 *service = [[LRGroupService_v62 alloc] init:session];
 	NSError *error;
 
