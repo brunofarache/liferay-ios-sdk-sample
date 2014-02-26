@@ -2,11 +2,12 @@ PODS:
   - LiferayMobileSDK (1.0.0)
 
 DEPENDENCIES:
-  - LiferayMobileSDK (from `/Users/jm/dev/mobile/liferay-mobile-sdk`)
+  - LiferayMobileSDK (from `https://github.com/jmnavarro/liferay-mobile-sdk.git`, branch `create-cocoapodspec`)
 
 EXTERNAL SOURCES:
   LiferayMobileSDK:
-    :path: /Users/jm/dev/mobile/liferay-mobile-sdk
+    :branch: create-cocoapodspec
+    :git: https://github.com/jmnavarro/liferay-mobile-sdk.git
 
 SPEC CHECKSUMS:
   LiferayMobileSDK: ae9c3c9346ffe719094e4793814d00bc508cb346

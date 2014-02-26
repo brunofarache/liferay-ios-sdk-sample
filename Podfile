@@ -1,1 +1,1 @@
-pod 'LiferayMobileSDK', :path => '/Users/jm/dev/mobile/liferay-mobile-sdk'
+pod 'LiferayMobileSDK', :git => 'https://github.com/jmnavarro/liferay-mobile-sdk.git', :branch => 'create-cocoapodspec' 
