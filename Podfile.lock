@@ -1,0 +1,14 @@
+PODS:
+  - LiferayMobileSDK (1.0.0)
+
+DEPENDENCIES:
+  - LiferayMobileSDK (from `/Users/jm/dev/mobile/liferay-mobile-sdk`)
+
+EXTERNAL SOURCES:
+  LiferayMobileSDK:
+    :path: /Users/jm/dev/mobile/liferay-mobile-sdk
+
+SPEC CHECKSUMS:
+  LiferayMobileSDK: ae9c3c9346ffe719094e4793814d00bc508cb346
+
+COCOAPODS: 0.29.0

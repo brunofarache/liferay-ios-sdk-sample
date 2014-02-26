@@ -1,467 +1,1163 @@
-// !$*UTF8*$!
-{
-	archiveVersion = 1;
-	classes = {
-	};
-	objectVersion = 46;
-	objects = {
-
-/* Begin PBXBuildFile section */
-		CC2D992A187B7BC400DEEA56 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CC2D9928187B7BC400DEEA56 /* main.m */; };
-		CC2D992C187B7C4000DEEA56 /* Liferay Mobile SDK Sample iOS-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CC2D992B187B7C4000DEEA56 /* Liferay Mobile SDK Sample iOS-Info.plist */; };
-		CC694B9C187C3AD300EDA039 /* ContactCallback.m in Sources */ = {isa = PBXBuildFile; fileRef = CC694B9B187C3AD200EDA039 /* ContactCallback.m */; };
-		CC8E4C87187228E40034121D /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC8E4C86187228E40034121D /* MainViewController.m */; };
-		CC90AF01187B326B003C68B0 /* SettingsUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = CC90AF00187B326B003C68B0 /* SettingsUtil.m */; };
-		CC90AF05187B4E12003C68B0 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = CC90AF04187B4E12003C68B0 /* User.m */; };
-		CCE0A0141872213C00B1D023 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCE0A0131872213C00B1D023 /* Foundation.framework */; };
-		CCE0A0161872213C00B1D023 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCE0A0151872213C00B1D023 /* CoreGraphics.framework */; };
-		CCE0A0181872213C00B1D023 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCE0A0171872213C00B1D023 /* UIKit.framework */; };
-		CCE0A0241872213C00B1D023 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CCE0A0231872213C00B1D023 /* AppDelegate.m */; };
-		CCE0A0261872213C00B1D023 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CCE0A0251872213C00B1D023 /* Images.xcassets */; };
-		CCE0A02E1872213C00B1D023 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCE0A0131872213C00B1D023 /* Foundation.framework */; };
-		CCE0A02F1872213C00B1D023 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCE0A0171872213C00B1D023 /* UIKit.framework */; };
-		CCE967C1187C72EA006272B5 /* Contact.m in Sources */ = {isa = PBXBuildFile; fileRef = CCE967C0187C72EA006272B5 /* Contact.m */; };
-		CCE967C4187C933F006272B5 /* DetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CCE967C3187C933F006272B5 /* DetailsViewController.m */; };
-/* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		CCE0A0301872213C00B1D023 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = CCE0A0081872213C00B1D023 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = CCE0A00F1872213C00B1D023;
-			remoteInfo = "Liferay Mobile SDK Sample iOS";
-		};
-/* End PBXContainerItemProxy section */
-
-/* Begin PBXFileReference section */
-		CC2D9927187B7BC400DEEA56 /* Liferay Mobile SDK Sample iOS-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Liferay Mobile SDK Sample iOS-Prefix.pch"; sourceTree = "<group>"; };
-		CC2D9928187B7BC400DEEA56 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		CC2D992B187B7C4000DEEA56 /* Liferay Mobile SDK Sample iOS-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Liferay Mobile SDK Sample iOS-Info.plist"; sourceTree = "<group>"; };
-		CC694B9A187C3AD200EDA039 /* ContactCallback.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ContactCallback.h; path = Callback/ContactCallback.h; sourceTree = "<group>"; };
-		CC694B9B187C3AD200EDA039 /* ContactCallback.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ContactCallback.m; path = Callback/ContactCallback.m; sourceTree = "<group>"; };
-		CC8E4C85187228E40034121D /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainViewController.h; path = Controller/MainViewController.h; sourceTree = "<group>"; };
-		CC8E4C86187228E40034121D /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MainViewController.m; path = Controller/MainViewController.m; sourceTree = "<group>"; };
-		CC90AEFF187B326B003C68B0 /* SettingsUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SettingsUtil.h; path = Util/SettingsUtil.h; sourceTree = "<group>"; };
-		CC90AF00187B326B003C68B0 /* SettingsUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SettingsUtil.m; path = Util/SettingsUtil.m; sourceTree = "<group>"; };
-		CC90AF03187B4E12003C68B0 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = User.h; path = Model/User.h; sourceTree = "<group>"; };
-		CC90AF04187B4E12003C68B0 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = User.m; path = Model/User.m; sourceTree = "<group>"; };
-		CCE0A0101872213C00B1D023 /* Liferay Mobile SDK Sample iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Liferay Mobile SDK Sample iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		CCE0A0131872213C00B1D023 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		CCE0A0151872213C00B1D023 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		CCE0A0171872213C00B1D023 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		CCE0A0221872213C00B1D023 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		CCE0A0231872213C00B1D023 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		CCE0A0251872213C00B1D023 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = SOURCE_ROOT; };
-		CCE0A02B1872213C00B1D023 /* Liferay Mobile SDK Sample iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Liferay Mobile SDK Sample iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		CCE967BF187C72EA006272B5 /* Contact.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Contact.h; path = Model/Contact.h; sourceTree = "<group>"; };
-		CCE967C0187C72EA006272B5 /* Contact.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Contact.m; path = Model/Contact.m; sourceTree = "<group>"; };
-		CCE967C2187C933F006272B5 /* DetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DetailsViewController.h; path = Controller/DetailsViewController.h; sourceTree = "<group>"; };
-		CCE967C3187C933F006272B5 /* DetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DetailsViewController.m; path = Controller/DetailsViewController.m; sourceTree = "<group>"; };
-/* End PBXFileReference section */
-
-/* Begin PBXFrameworksBuildPhase section */
-		CCE0A00D1872213C00B1D023 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				CCE0A0161872213C00B1D023 /* CoreGraphics.framework in Frameworks */,
-				CCE0A0181872213C00B1D023 /* UIKit.framework in Frameworks */,
-				CCE0A0141872213C00B1D023 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CCE0A0281872213C00B1D023 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				CCE0A02F1872213C00B1D023 /* UIKit.framework in Frameworks */,
-				CCE0A02E1872213C00B1D023 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXFrameworksBuildPhase section */
-
-/* Begin PBXGroup section */
-		CC694B99187C3AAF00EDA039 /* Callback */ = {
-			isa = PBXGroup;
-			children = (
-				CC694B9A187C3AD200EDA039 /* ContactCallback.h */,
-				CC694B9B187C3AD200EDA039 /* ContactCallback.m */,
-			);
-			name = Callback;
-			sourceTree = "<group>";
-		};
-		CC8E4C88187228EC0034121D /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				CCE967C2187C933F006272B5 /* DetailsViewController.h */,
-				CCE967C3187C933F006272B5 /* DetailsViewController.m */,
-				CC8E4C85187228E40034121D /* MainViewController.h */,
-				CC8E4C86187228E40034121D /* MainViewController.m */,
-			);
-			name = Controller;
-			sourceTree = "<group>";
-		};
-		CC90AEFE187B3227003C68B0 /* Util */ = {
-			isa = PBXGroup;
-			children = (
-				CC90AEFF187B326B003C68B0 /* SettingsUtil.h */,
-				CC90AF00187B326B003C68B0 /* SettingsUtil.m */,
-			);
-			name = Util;
-			sourceTree = "<group>";
-		};
-		CC90AF02187B4DF7003C68B0 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				CCE967BF187C72EA006272B5 /* Contact.h */,
-				CCE967C0187C72EA006272B5 /* Contact.m */,
-				CC90AF03187B4E12003C68B0 /* User.h */,
-				CC90AF04187B4E12003C68B0 /* User.m */,
-			);
-			name = Model;
-			sourceTree = "<group>";
-		};
-		CCE0A0071872213C00B1D023 = {
-			isa = PBXGroup;
-			children = (
-				CCE0A0191872213C00B1D023 /* Liferay Mobile SDK Sample iOS */,
-				CCE0A0121872213C00B1D023 /* Frameworks */,
-				CCE0A0111872213C00B1D023 /* Products */,
-			);
-			sourceTree = "<group>";
-		};
-		CCE0A0111872213C00B1D023 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				CCE0A0101872213C00B1D023 /* Liferay Mobile SDK Sample iOS.app */,
-				CCE0A02B1872213C00B1D023 /* Liferay Mobile SDK Sample iOSTests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		CCE0A0121872213C00B1D023 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				CCE0A0131872213C00B1D023 /* Foundation.framework */,
-				CCE0A0151872213C00B1D023 /* CoreGraphics.framework */,
-				CCE0A0171872213C00B1D023 /* UIKit.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		CCE0A0191872213C00B1D023 /* Liferay Mobile SDK Sample iOS */ = {
-			isa = PBXGroup;
-			children = (
-				CC694B99187C3AAF00EDA039 /* Callback */,
-				CC8E4C88187228EC0034121D /* Controller */,
-				CC90AF02187B4DF7003C68B0 /* Model */,
-				CC90AEFE187B3227003C68B0 /* Util */,
-				CCE0A0251872213C00B1D023 /* Images.xcassets */,
-				CCE0A0221872213C00B1D023 /* AppDelegate.h */,
-				CCE0A0231872213C00B1D023 /* AppDelegate.m */,
-				CC2D992B187B7C4000DEEA56 /* Liferay Mobile SDK Sample iOS-Info.plist */,
-				CC2D9927187B7BC400DEEA56 /* Liferay Mobile SDK Sample iOS-Prefix.pch */,
-				CC2D9928187B7BC400DEEA56 /* main.m */,
-			);
-			name = "Liferay Mobile SDK Sample iOS";
-			sourceTree = SOURCE_ROOT;
-		};
-/* End PBXGroup section */
-
-/* Begin PBXNativeTarget section */
-		CCE0A00F1872213C00B1D023 /* Liferay Mobile SDK Sample iOS */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = CCE0A03C1872213C00B1D023 /* Build configuration list for PBXNativeTarget "Liferay Mobile SDK Sample iOS" */;
-			buildPhases = (
-				CCE0A00C1872213C00B1D023 /* Sources */,
-				CCE0A00D1872213C00B1D023 /* Frameworks */,
-				CCE0A00E1872213C00B1D023 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "Liferay Mobile SDK Sample iOS";
-			productName = "Liferay Mobile SDK Sample iOS";
-			productReference = CCE0A0101872213C00B1D023 /* Liferay Mobile SDK Sample iOS.app */;
-			productType = "com.apple.product-type.application";
-		};
-		CCE0A02A1872213C00B1D023 /* Liferay Mobile SDK Sample iOSTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = CCE0A03F1872213C00B1D023 /* Build configuration list for PBXNativeTarget "Liferay Mobile SDK Sample iOSTests" */;
-			buildPhases = (
-				CCE0A0271872213C00B1D023 /* Sources */,
-				CCE0A0281872213C00B1D023 /* Frameworks */,
-				CCE0A0291872213C00B1D023 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				CCE0A0311872213C00B1D023 /* PBXTargetDependency */,
-			);
-			name = "Liferay Mobile SDK Sample iOSTests";
-			productName = "Liferay Mobile SDK Sample iOSTests";
-			productReference = CCE0A02B1872213C00B1D023 /* Liferay Mobile SDK Sample iOSTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-/* End PBXNativeTarget section */
-
-/* Begin PBXProject section */
-		CCE0A0081872213C00B1D023 /* Project object */ = {
-			isa = PBXProject;
-			attributes = {
-				LastUpgradeCheck = 0500;
-				ORGANIZATIONNAME = "Liferay Inc.";
-				TargetAttributes = {
-					CCE0A02A1872213C00B1D023 = {
-						TestTargetID = CCE0A00F1872213C00B1D023;
-					};
-				};
-			};
-			buildConfigurationList = CCE0A00B1872213C00B1D023 /* Build configuration list for PBXProject "Liferay Mobile SDK Sample iOS" */;
-			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
-			hasScannedForEncodings = 0;
-			knownRegions = (
-				en,
-			);
-			mainGroup = CCE0A0071872213C00B1D023;
-			productRefGroup = CCE0A0111872213C00B1D023 /* Products */;
-			projectDirPath = "";
-			projectRoot = "";
-			targets = (
-				CCE0A00F1872213C00B1D023 /* Liferay Mobile SDK Sample iOS */,
-				CCE0A02A1872213C00B1D023 /* Liferay Mobile SDK Sample iOSTests */,
-			);
-		};
-/* End PBXProject section */
-
-/* Begin PBXResourcesBuildPhase section */
-		CCE0A00E1872213C00B1D023 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				CC2D992C187B7C4000DEEA56 /* Liferay Mobile SDK Sample iOS-Info.plist in Resources */,
-				CCE0A0261872213C00B1D023 /* Images.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CCE0A0291872213C00B1D023 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXResourcesBuildPhase section */
-
-/* Begin PBXSourcesBuildPhase section */
-		CCE0A00C1872213C00B1D023 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				CC90AF05187B4E12003C68B0 /* User.m in Sources */,
-				CC694B9C187C3AD300EDA039 /* ContactCallback.m in Sources */,
-				CC8E4C87187228E40034121D /* MainViewController.m in Sources */,
-				CCE0A0241872213C00B1D023 /* AppDelegate.m in Sources */,
-				CC90AF01187B326B003C68B0 /* SettingsUtil.m in Sources */,
-				CCE967C1187C72EA006272B5 /* Contact.m in Sources */,
-				CC2D992A187B7BC400DEEA56 /* main.m in Sources */,
-				CCE967C4187C933F006272B5 /* DetailsViewController.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CCE0A0271872213C00B1D023 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		CCE0A0311872213C00B1D023 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = CCE0A00F1872213C00B1D023 /* Liferay Mobile SDK Sample iOS */;
-			targetProxy = CCE0A0301872213C00B1D023 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
-/* Begin XCBuildConfiguration section */
-		CCE0A03A1872213C00B1D023 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = iphoneos;
-			};
-			name = Debug;
-		};
-		CCE0A03B1872213C00B1D023 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = YES;
-				ENABLE_NS_ASSERTIONS = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				SDKROOT = iphoneos;
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		CCE0A03D1872213C00B1D023 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Liferay Mobile SDK Sample iOS-Prefix.pch";
-				INFOPLIST_FILE = "Liferay Mobile SDK Sample iOS-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = app;
-			};
-			name = Debug;
-		};
-		CCE0A03E1872213C00B1D023 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Liferay Mobile SDK Sample iOS-Prefix.pch";
-				INFOPLIST_FILE = "Liferay Mobile SDK Sample iOS-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = app;
-			};
-			name = Release;
-		};
-		CCE0A0401872213C00B1D023 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Liferay Mobile SDK Sample iOS.app/Liferay Mobile SDK Sample iOS";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Liferay Mobile SDK Sample iOS/Liferay Mobile SDK Sample iOS-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "Liferay Mobile SDK Sample iOSTests/Liferay Mobile SDK Sample iOSTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Debug;
-		};
-		CCE0A0411872213C00B1D023 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Liferay Mobile SDK Sample iOS.app/Liferay Mobile SDK Sample iOS";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Liferay Mobile SDK Sample iOS/Liferay Mobile SDK Sample iOS-Prefix.pch";
-				INFOPLIST_FILE = "Liferay Mobile SDK Sample iOSTests/Liferay Mobile SDK Sample iOSTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Release;
-		};
-/* End XCBuildConfiguration section */
-
-/* Begin XCConfigurationList section */
-		CCE0A00B1872213C00B1D023 /* Build configuration list for PBXProject "Liferay Mobile SDK Sample iOS" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				CCE0A03A1872213C00B1D023 /* Debug */,
-				CCE0A03B1872213C00B1D023 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		CCE0A03C1872213C00B1D023 /* Build configuration list for PBXNativeTarget "Liferay Mobile SDK Sample iOS" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				CCE0A03D1872213C00B1D023 /* Debug */,
-				CCE0A03E1872213C00B1D023 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		CCE0A03F1872213C00B1D023 /* Build configuration list for PBXNativeTarget "Liferay Mobile SDK Sample iOSTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				CCE0A0401872213C00B1D023 /* Debug */,
-				CCE0A0411872213C00B1D023 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-/* End XCConfigurationList section */
-	};
-	rootObject = CCE0A0081872213C00B1D023 /* Project object */;
-}
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>archiveVersion</key>
+	<string>1</string>
+	<key>classes</key>
+	<dict/>
+	<key>objectVersion</key>
+	<string>46</string>
+	<key>objects</key>
+	<dict>
+		<key>A9F0F08DB9394889A5A1CED3</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>name</key>
+			<string>Pods.xcconfig</string>
+			<key>path</key>
+			<string>Pods/Pods.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B0AABA65FF504D11AD22F7D8</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>Copy Pods Resources</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>"${SRCROOT}/Pods/Pods-resources.sh"
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>CA13E3A25DCF46D4A04AC2BA</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>Check Pods Manifest.lock</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
+if [[ $? != 0 ]] ; then
+    cat &lt;&lt; EOM
+error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
+EOM
+    exit 1
+fi
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>CC2D9927187B7BC400DEEA56</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>Liferay Mobile SDK Sample iOS-Prefix.pch</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>CC2D9928187B7BC400DEEA56</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>main.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>CC2D992A187B7BC400DEEA56</key>
+		<dict>
+			<key>fileRef</key>
+			<string>CC2D9928187B7BC400DEEA56</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>CC2D992B187B7C4000DEEA56</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Liferay Mobile SDK Sample iOS-Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>CC2D992C187B7C4000DEEA56</key>
+		<dict>
+			<key>fileRef</key>
+			<string>CC2D992B187B7C4000DEEA56</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>CC694B99187C3AAF00EDA039</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>CC694B9A187C3AD200EDA039</string>
+				<string>CC694B9B187C3AD200EDA039</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Callback</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>CC694B9A187C3AD200EDA039</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>ContactCallback.h</string>
+			<key>path</key>
+			<string>Callback/ContactCallback.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>CC694B9B187C3AD200EDA039</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>ContactCallback.m</string>
+			<key>path</key>
+			<string>Callback/ContactCallback.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>CC694B9C187C3AD300EDA039</key>
+		<dict>
+			<key>fileRef</key>
+			<string>CC694B9B187C3AD200EDA039</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>CC8E4C85187228E40034121D</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>MainViewController.h</string>
+			<key>path</key>
+			<string>Controller/MainViewController.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>CC8E4C86187228E40034121D</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>MainViewController.m</string>
+			<key>path</key>
+			<string>Controller/MainViewController.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>CC8E4C87187228E40034121D</key>
+		<dict>
+			<key>fileRef</key>
+			<string>CC8E4C86187228E40034121D</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>CC8E4C88187228EC0034121D</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>CCE967C2187C933F006272B5</string>
+				<string>CCE967C3187C933F006272B5</string>
+				<string>CC8E4C85187228E40034121D</string>
+				<string>CC8E4C86187228E40034121D</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Controller</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>CC90AEFE187B3227003C68B0</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>CC90AEFF187B326B003C68B0</string>
+				<string>CC90AF00187B326B003C68B0</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Util</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>CC90AEFF187B326B003C68B0</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>SettingsUtil.h</string>
+			<key>path</key>
+			<string>Util/SettingsUtil.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>CC90AF00187B326B003C68B0</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>SettingsUtil.m</string>
+			<key>path</key>
+			<string>Util/SettingsUtil.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>CC90AF01187B326B003C68B0</key>
+		<dict>
+			<key>fileRef</key>
+			<string>CC90AF00187B326B003C68B0</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>CC90AF02187B4DF7003C68B0</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>CCE967BF187C72EA006272B5</string>
+				<string>CCE967C0187C72EA006272B5</string>
+				<string>CC90AF03187B4E12003C68B0</string>
+				<string>CC90AF04187B4E12003C68B0</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Model</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>CC90AF03187B4E12003C68B0</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>User.h</string>
+			<key>path</key>
+			<string>Model/User.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>CC90AF04187B4E12003C68B0</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>User.m</string>
+			<key>path</key>
+			<string>Model/User.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>CC90AF05187B4E12003C68B0</key>
+		<dict>
+			<key>fileRef</key>
+			<string>CC90AF04187B4E12003C68B0</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>CCE0A0071872213C00B1D023</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>CCE0A0191872213C00B1D023</string>
+				<string>CCE0A0121872213C00B1D023</string>
+				<string>CCE0A0111872213C00B1D023</string>
+				<string>A9F0F08DB9394889A5A1CED3</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>CCE0A0081872213C00B1D023</key>
+		<dict>
+			<key>attributes</key>
+			<dict>
+				<key>LastUpgradeCheck</key>
+				<string>0500</string>
+				<key>ORGANIZATIONNAME</key>
+				<string>Liferay Inc.</string>
+				<key>TargetAttributes</key>
+				<dict>
+					<key>CCE0A02A1872213C00B1D023</key>
+					<dict>
+						<key>TestTargetID</key>
+						<string>CCE0A00F1872213C00B1D023</string>
+					</dict>
+				</dict>
+			</dict>
+			<key>buildConfigurationList</key>
+			<string>CCE0A00B1872213C00B1D023</string>
+			<key>compatibilityVersion</key>
+			<string>Xcode 3.2</string>
+			<key>developmentRegion</key>
+			<string>English</string>
+			<key>hasScannedForEncodings</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXProject</string>
+			<key>knownRegions</key>
+			<array>
+				<string>en</string>
+			</array>
+			<key>mainGroup</key>
+			<string>CCE0A0071872213C00B1D023</string>
+			<key>productRefGroup</key>
+			<string>CCE0A0111872213C00B1D023</string>
+			<key>projectDirPath</key>
+			<string></string>
+			<key>projectReferences</key>
+			<array/>
+			<key>projectRoot</key>
+			<string></string>
+			<key>targets</key>
+			<array>
+				<string>CCE0A00F1872213C00B1D023</string>
+				<string>CCE0A02A1872213C00B1D023</string>
+			</array>
+		</dict>
+		<key>CCE0A00B1872213C00B1D023</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>CCE0A03A1872213C00B1D023</string>
+				<string>CCE0A03B1872213C00B1D023</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>CCE0A00C1872213C00B1D023</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>CC90AF05187B4E12003C68B0</string>
+				<string>CC694B9C187C3AD300EDA039</string>
+				<string>CC8E4C87187228E40034121D</string>
+				<string>CCE0A0241872213C00B1D023</string>
+				<string>CC90AF01187B326B003C68B0</string>
+				<string>CCE967C1187C72EA006272B5</string>
+				<string>CC2D992A187B7BC400DEEA56</string>
+				<string>CCE967C4187C933F006272B5</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>CCE0A00D1872213C00B1D023</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>CCE0A0161872213C00B1D023</string>
+				<string>CCE0A0181872213C00B1D023</string>
+				<string>CCE0A0141872213C00B1D023</string>
+				<string>E96F626F074145DDB7283351</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>CCE0A00E1872213C00B1D023</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>CC2D992C187B7C4000DEEA56</string>
+				<string>CCE0A0261872213C00B1D023</string>
+			</array>
+			<key>isa</key>
+			<string>PBXResourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>CCE0A00F1872213C00B1D023</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>CCE0A03C1872213C00B1D023</string>
+			<key>buildPhases</key>
+			<array>
+				<string>CA13E3A25DCF46D4A04AC2BA</string>
+				<string>CCE0A00C1872213C00B1D023</string>
+				<string>CCE0A00D1872213C00B1D023</string>
+				<string>CCE0A00E1872213C00B1D023</string>
+				<string>B0AABA65FF504D11AD22F7D8</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>Liferay Mobile SDK Sample iOS</string>
+			<key>productName</key>
+			<string>Liferay Mobile SDK Sample iOS</string>
+			<key>productReference</key>
+			<string>CCE0A0101872213C00B1D023</string>
+			<key>productType</key>
+			<string>com.apple.product-type.application</string>
+		</dict>
+		<key>CCE0A0101872213C00B1D023</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.application</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>Liferay Mobile SDK Sample iOS.app</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>CCE0A0111872213C00B1D023</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>CCE0A0101872213C00B1D023</string>
+				<string>CCE0A02B1872213C00B1D023</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Products</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>CCE0A0121872213C00B1D023</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>CCE0A0131872213C00B1D023</string>
+				<string>CCE0A0151872213C00B1D023</string>
+				<string>CCE0A0171872213C00B1D023</string>
+				<string>E81D339786BB4120A5B1A5F7</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Frameworks</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>CCE0A0131872213C00B1D023</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>Foundation.framework</string>
+			<key>path</key>
+			<string>System/Library/Frameworks/Foundation.framework</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>CCE0A0141872213C00B1D023</key>
+		<dict>
+			<key>fileRef</key>
+			<string>CCE0A0131872213C00B1D023</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>CCE0A0151872213C00B1D023</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>CoreGraphics.framework</string>
+			<key>path</key>
+			<string>System/Library/Frameworks/CoreGraphics.framework</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>CCE0A0161872213C00B1D023</key>
+		<dict>
+			<key>fileRef</key>
+			<string>CCE0A0151872213C00B1D023</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>CCE0A0171872213C00B1D023</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>UIKit.framework</string>
+			<key>path</key>
+			<string>System/Library/Frameworks/UIKit.framework</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>CCE0A0181872213C00B1D023</key>
+		<dict>
+			<key>fileRef</key>
+			<string>CCE0A0171872213C00B1D023</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>CCE0A0191872213C00B1D023</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>CC694B99187C3AAF00EDA039</string>
+				<string>CC8E4C88187228EC0034121D</string>
+				<string>CC90AF02187B4DF7003C68B0</string>
+				<string>CC90AEFE187B3227003C68B0</string>
+				<string>CCE0A0251872213C00B1D023</string>
+				<string>CCE0A0221872213C00B1D023</string>
+				<string>CCE0A0231872213C00B1D023</string>
+				<string>CC2D992B187B7C4000DEEA56</string>
+				<string>CC2D9927187B7BC400DEEA56</string>
+				<string>CC2D9928187B7BC400DEEA56</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Liferay Mobile SDK Sample iOS</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>CCE0A0221872213C00B1D023</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>AppDelegate.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>CCE0A0231872213C00B1D023</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>AppDelegate.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>CCE0A0241872213C00B1D023</key>
+		<dict>
+			<key>fileRef</key>
+			<string>CCE0A0231872213C00B1D023</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>CCE0A0251872213C00B1D023</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>folder.assetcatalog</string>
+			<key>path</key>
+			<string>Images.xcassets</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>CCE0A0261872213C00B1D023</key>
+		<dict>
+			<key>fileRef</key>
+			<string>CCE0A0251872213C00B1D023</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>CCE0A0271872213C00B1D023</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>CCE0A0281872213C00B1D023</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>CCE0A02F1872213C00B1D023</string>
+				<string>CCE0A02E1872213C00B1D023</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>CCE0A0291872213C00B1D023</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXResourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>CCE0A02A1872213C00B1D023</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>CCE0A03F1872213C00B1D023</string>
+			<key>buildPhases</key>
+			<array>
+				<string>CCE0A0271872213C00B1D023</string>
+				<string>CCE0A0281872213C00B1D023</string>
+				<string>CCE0A0291872213C00B1D023</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array>
+				<string>CCE0A0311872213C00B1D023</string>
+			</array>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>Liferay Mobile SDK Sample iOSTests</string>
+			<key>productName</key>
+			<string>Liferay Mobile SDK Sample iOSTests</string>
+			<key>productReference</key>
+			<string>CCE0A02B1872213C00B1D023</string>
+			<key>productType</key>
+			<string>com.apple.product-type.bundle.unit-test</string>
+		</dict>
+		<key>CCE0A02B1872213C00B1D023</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.cfbundle</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>Liferay Mobile SDK Sample iOSTests.xctest</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>CCE0A02E1872213C00B1D023</key>
+		<dict>
+			<key>fileRef</key>
+			<string>CCE0A0131872213C00B1D023</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>CCE0A02F1872213C00B1D023</key>
+		<dict>
+			<key>fileRef</key>
+			<string>CCE0A0171872213C00B1D023</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>CCE0A0301872213C00B1D023</key>
+		<dict>
+			<key>containerPortal</key>
+			<string>CCE0A0081872213C00B1D023</string>
+			<key>isa</key>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>1</string>
+			<key>remoteGlobalIDString</key>
+			<string>CCE0A00F1872213C00B1D023</string>
+			<key>remoteInfo</key>
+			<string>Liferay Mobile SDK Sample iOS</string>
+		</dict>
+		<key>CCE0A0311872213C00B1D023</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXTargetDependency</string>
+			<key>target</key>
+			<string>CCE0A00F1872213C00B1D023</string>
+			<key>targetProxy</key>
+			<string>CCE0A0301872213C00B1D023</string>
+		</dict>
+		<key>CCE0A03A1872213C00B1D023</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>ARCHS</key>
+				<string>$(ARCHS_STANDARD_INCLUDING_64_BIT)</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_MODULES</key>
+				<string>YES</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CLANG_WARN_BOOL_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN_ENUM_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
+				<string>YES</string>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>NO</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_DYNAMIC_NO_PIC</key>
+				<string>NO</string>
+				<key>GCC_OPTIMIZATION_LEVEL</key>
+				<string>0</string>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>DEBUG=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
+				<string>NO</string>
+				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
+				<string>YES</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES_ERROR</string>
+				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_FUNCTION</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>7.0</string>
+				<key>ONLY_ACTIVE_ARCH</key>
+				<string>YES</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>CCE0A03B1872213C00B1D023</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>ARCHS</key>
+				<string>$(ARCHS_STANDARD_INCLUDING_64_BIT)</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_MODULES</key>
+				<string>YES</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CLANG_WARN_BOOL_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN_ENUM_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
+				<string>YES</string>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>YES</string>
+				<key>ENABLE_NS_ASSERTIONS</key>
+				<string>NO</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
+				<string>YES</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES_ERROR</string>
+				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_FUNCTION</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>7.0</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>VALIDATE_PRODUCT</key>
+				<string>YES</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>CCE0A03C1872213C00B1D023</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>CCE0A03D1872213C00B1D023</string>
+				<string>CCE0A03E1872213C00B1D023</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>CCE0A03D1872213C00B1D023</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>A9F0F08DB9394889A5A1CED3</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
+				<string>AppIcon</string>
+				<key>ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME</key>
+				<string>LaunchImage</string>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>Liferay Mobile SDK Sample iOS-Prefix.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>Liferay Mobile SDK Sample iOS-Info.plist</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>WRAPPER_EXTENSION</key>
+				<string>app</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>CCE0A03E1872213C00B1D023</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>A9F0F08DB9394889A5A1CED3</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
+				<string>AppIcon</string>
+				<key>ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME</key>
+				<string>LaunchImage</string>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>Liferay Mobile SDK Sample iOS-Prefix.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>Liferay Mobile SDK Sample iOS-Info.plist</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>WRAPPER_EXTENSION</key>
+				<string>app</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>CCE0A03F1872213C00B1D023</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>CCE0A0401872213C00B1D023</string>
+				<string>CCE0A0411872213C00B1D023</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>CCE0A0401872213C00B1D023</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ARCHS</key>
+				<string>$(ARCHS_STANDARD_INCLUDING_64_BIT)</string>
+				<key>BUNDLE_LOADER</key>
+				<string>$(BUILT_PRODUCTS_DIR)/Liferay Mobile SDK Sample iOS.app/Liferay Mobile SDK Sample iOS</string>
+				<key>FRAMEWORK_SEARCH_PATHS</key>
+				<array>
+					<string>$(SDKROOT)/Developer/Library/Frameworks</string>
+					<string>$(inherited)</string>
+					<string>$(DEVELOPER_FRAMEWORKS_DIR)</string>
+				</array>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>Liferay Mobile SDK Sample iOS/Liferay Mobile SDK Sample iOS-Prefix.pch</string>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>DEBUG=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>INFOPLIST_FILE</key>
+				<string>Liferay Mobile SDK Sample iOSTests/Liferay Mobile SDK Sample iOSTests-Info.plist</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>TEST_HOST</key>
+				<string>$(BUNDLE_LOADER)</string>
+				<key>WRAPPER_EXTENSION</key>
+				<string>xctest</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>CCE0A0411872213C00B1D023</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ARCHS</key>
+				<string>$(ARCHS_STANDARD_INCLUDING_64_BIT)</string>
+				<key>BUNDLE_LOADER</key>
+				<string>$(BUILT_PRODUCTS_DIR)/Liferay Mobile SDK Sample iOS.app/Liferay Mobile SDK Sample iOS</string>
+				<key>FRAMEWORK_SEARCH_PATHS</key>
+				<array>
+					<string>$(SDKROOT)/Developer/Library/Frameworks</string>
+					<string>$(inherited)</string>
+					<string>$(DEVELOPER_FRAMEWORKS_DIR)</string>
+				</array>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>Liferay Mobile SDK Sample iOS/Liferay Mobile SDK Sample iOS-Prefix.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>Liferay Mobile SDK Sample iOSTests/Liferay Mobile SDK Sample iOSTests-Info.plist</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>TEST_HOST</key>
+				<string>$(BUNDLE_LOADER)</string>
+				<key>WRAPPER_EXTENSION</key>
+				<string>xctest</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>CCE967BF187C72EA006272B5</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>Contact.h</string>
+			<key>path</key>
+			<string>Model/Contact.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>CCE967C0187C72EA006272B5</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>Contact.m</string>
+			<key>path</key>
+			<string>Model/Contact.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>CCE967C1187C72EA006272B5</key>
+		<dict>
+			<key>fileRef</key>
+			<string>CCE967C0187C72EA006272B5</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>CCE967C2187C933F006272B5</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>DetailsViewController.h</string>
+			<key>path</key>
+			<string>Controller/DetailsViewController.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>CCE967C3187C933F006272B5</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>DetailsViewController.m</string>
+			<key>path</key>
+			<string>Controller/DetailsViewController.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>CCE967C4187C933F006272B5</key>
+		<dict>
+			<key>fileRef</key>
+			<string>CCE967C3187C933F006272B5</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>E81D339786BB4120A5B1A5F7</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>archive.ar</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>libPods.a</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>E96F626F074145DDB7283351</key>
+		<dict>
+			<key>fileRef</key>
+			<string>E81D339786BB4120A5B1A5F7</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+	</dict>
+	<key>rootObject</key>
+	<string>CCE0A0081872213C00B1D023</string>
+</dict>
+</plist>
