@@ -28,4 +28,4 @@ file, use this file to open your project in XCode.
 For more information on how CocoaPods works, read their
 [documentation](http://guides.cocoapods.org/using/index.html).
 
-If you don't really want to use CocoaPods, you can just download the [iOS SDK zip](https://github.com/liferay/liferay-mobile-sdk/releases), unzip into your project and add all files to you XCode project with `Add files to ...`.
+If you don't want to use CocoaPods, you can just download the [iOS SDK source code](https://github.com/liferay/liferay-mobile-sdk/releases), unzip into your project and add all files to your XCode project.
