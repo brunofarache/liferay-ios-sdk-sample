@@ -48,7 +48,7 @@
 		cell = [[UITableViewCell alloc]
 			initWithStyle:UITableViewCellStyleDefault
 			reuseIdentifier:identifier];
-    }
+	}
 
 	User *user = [self.users objectAtIndex:indexPath.row];
 

@@ -44,7 +44,7 @@
 		cell = [[UITableViewCell alloc]
 			initWithStyle:UITableViewCellStyleDefault
 			reuseIdentifier:identifier];
-    }
+	}
 
 	NSString *text = @"";
 
