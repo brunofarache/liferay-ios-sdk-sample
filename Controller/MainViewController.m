@@ -12,9 +12,10 @@
 
 		int groupId = [self _getGuestGroupId:session];
 
-		LRUserService_v62 *service = [[LRUserService_v62 alloc] init:session];
-		NSError *error;
+		LRUserService_v62 *service = [[LRUserService_v62 alloc]
+			initWithSession:session];
 
+		NSError *error;
 		NSArray *users = [service getGroupUsersWithGroupId:groupId
 			error:&error];
 
@@ -24,7 +25,6 @@
 
 		for (int i = 0; i < [users count]; i++) {
 			User *user = [[User alloc] init:[users objectAtIndex:i]];
-
 			[self.users addObject:user];
 		}
 	}
@@ -71,13 +71,14 @@
 	[batch setCallback:callback];
 
 	LRContactService_v62 *contactService = [[LRContactService_v62 alloc]
-		init:batch];
+		initWithSession:batch];
 
 	NSError *error;
 
 	[contactService getContactWithContactId:user.contactId error:&error];
 
-	LRPhoneService_v62 *phoneService = [[LRPhoneService_v62 alloc] init:batch];
+	LRPhoneService_v62 *phoneService = [[LRPhoneService_v62 alloc]
+		initWithSession:batch];
 
 	[phoneService getPhonesWithClassName:@"com.liferay.portal.model.Contact"
 		classPK:user.contactId error:&error];
@@ -100,7 +101,9 @@
 - (int)_getGuestGroupId:(LRSession *)session {
 	NSNumber *groupId = [NSNumber numberWithInt:-1];
 
-	LRGroupService_v62 *service = [[LRGroupService_v62 alloc] init:session];
+	LRGroupService_v62 *service = [[LRGroupService_v62 alloc]
+		initWithSession:session];
+
 	NSError *error;
 
 	NSArray *groups = [service getUserSites:&error];
