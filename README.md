@@ -16,16 +16,16 @@ If you want to make asynchronous requests, take a look on how [ContactCallback.m
 
 ### Build
 
-This projects uses CocoaPods to fetch dependencies and the Liferay iOS SDK. In order to build it, you have to:
+This projects uses CocoaPods to fetch dependencies and the Liferay iOS SDK itself. If you don't want to use CocoaPods, you can just download the [iOS SDK source code](https://github.com/liferay/liferay-mobile-sdk/releases), unzip into your project and add all files to your XCode project.
+
+In order to build with CocoaPods, you have to:
 
 1. Install CocoaPods.
 
 2. Run `$ pod install` from the project root folder.
 
 3. This will download the latest version of the SDK and create a .xcworkspace
-file, use this file to open your project in XCode.
+file, use it to open your project in XCode.
 
 For more information on how CocoaPods works, read their
 [documentation](http://guides.cocoapods.org/using/index.html).
-
-If you don't want to use CocoaPods, you can just download the [iOS SDK source code](https://github.com/liferay/liferay-mobile-sdk/releases), unzip into your project and add all files to your XCode project.
