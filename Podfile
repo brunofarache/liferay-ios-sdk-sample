@@ -1,1 +1,1 @@
-pod 'Liferay-iOS-SDK', :git => "https://github.com/liferay/liferay-mobile-sdk.git"
+pod "Liferay-iOS-SDK", "6.2.0.1"
