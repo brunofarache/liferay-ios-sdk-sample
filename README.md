@@ -10,13 +10,13 @@ Email: `test@liferay.com`; password: `test`; server: `http://localhost:8080`.
 
 You can change these values in the [SettingsUtil.m](Util/SettingsUtil.m) class.
 
-Most of the interesting code are in [MainViewController.m](Controller/MainViewController.m) and [DetailsViewController.m](Controller/DetailsViewController.m). In this classes you can see how to create sessions and call portal services.
+Most of the interesting code are in [MainViewController.m](Controller/MainViewController.m) and [DetailsViewController.m](Controller/DetailsViewController.m). In these classes you can see how to create sessions and call portal services.
 
 If you want to make asynchronous requests, take a look on how [ContactCallback.m](Callback/ContactCallback.m) is used.
 
 ### Build
 
-This projects uses CocoaPods to fetch dependencies and the Liferay iOS SDK itself. If you don't want to use CocoaPods, you can just download the [iOS SDK source code](https://github.com/liferay/liferay-mobile-sdk/releases), unzip and add all files to your XCode project.
+This project uses CocoaPods to fetch dependencies and the Liferay iOS SDK itself. If you don't want to use CocoaPods, you can just download the [iOS SDK source code](https://github.com/liferay/liferay-mobile-sdk/releases), unzip and add all files to your XCode project.
 
 In order to build with CocoaPods, you have to:
 
