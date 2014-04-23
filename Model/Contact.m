@@ -24,7 +24,7 @@
 			NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
 
 			[formatter setDateStyle:NSDateFormatterShortStyle];
-			[formatter setTimeStyle:NSDateFormatterShortStyle];
+			[formatter setTimeStyle:NSDateFormatterNoStyle];
 
 			self.birthday = [formatter stringFromDate:birthday];
 		}
