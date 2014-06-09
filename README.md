@@ -24,9 +24,9 @@ If you want to make asynchronous requests, take a look on how
 ### Build
 
 This project uses CocoaPods to fetch dependencies and the Liferay iOS SDK
-itself. If you don't want to use CocoaPods, you can just download the
-[iOS SDK source code](https://github.com/liferay/liferay-mobile-sdk/releases),
-unzip and add all files to your Xcode project.
+itself. If you don't want to use CocoaPods, you can download the iOS SDK source
+code and its dependencies, unzip and add them to your Xcode project, follow the
+instructions described [here](https://github.com/liferay/liferay-mobile-sdk/tree/master/ios#manually).
 
 In order to build with CocoaPods, you have to:
 
