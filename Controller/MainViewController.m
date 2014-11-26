@@ -63,7 +63,7 @@
 	User *user = [self.users objectAtIndex:indexPath.row];
 
 	LRBatchSession *batch = [[LRBatchSession alloc]
-		init:[SettingsUtil getSession]];
+		initWithSession:[SettingsUtil getSession]];
 
 	ContactCallback *callback = [[ContactCallback alloc]
 		init:user navigationController:self.navigationController];

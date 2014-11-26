@@ -41,8 +41,8 @@ static NSUserDefaults *_preferences;
 }
 
 + (LRSession *)getSession {
-	return [[LRSession alloc] init:[self getServer] username:[self getLogin]
-		password:[self getPassword]];
+	return [[LRSession alloc] initWithServer:[self getServer]
+		username:[self getLogin] password:[self getPassword]];
 }
 
 @end
