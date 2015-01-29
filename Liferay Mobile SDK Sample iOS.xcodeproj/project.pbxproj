@@ -17,25 +17,14 @@
 		CCE0A0181872213C00B1D023 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCE0A0171872213C00B1D023 /* UIKit.framework */; };
 		CCE0A0241872213C00B1D023 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CCE0A0231872213C00B1D023 /* AppDelegate.m */; };
 		CCE0A0261872213C00B1D023 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CCE0A0251872213C00B1D023 /* Images.xcassets */; };
-		CCE0A02E1872213C00B1D023 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCE0A0131872213C00B1D023 /* Foundation.framework */; };
-		CCE0A02F1872213C00B1D023 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCE0A0171872213C00B1D023 /* UIKit.framework */; };
 		CCE967C1187C72EA006272B5 /* Contact.m in Sources */ = {isa = PBXBuildFile; fileRef = CCE967C0187C72EA006272B5 /* Contact.m */; };
 		CCE967C4187C933F006272B5 /* DetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CCE967C3187C933F006272B5 /* DetailsViewController.m */; };
 		E96F626F074145DDB7283351 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E81D339786BB4120A5B1A5F7 /* libPods.a */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		CCE0A0301872213C00B1D023 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = CCE0A0081872213C00B1D023 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = CCE0A00F1872213C00B1D023;
-			remoteInfo = "Liferay Mobile SDK Sample iOS";
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
-		A9F0F08DB9394889A5A1CED3 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		545E96D4B9F0B40CAA3FA214 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		61D9D5255835EFF9BE2744D7 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		CC2D9927187B7BC400DEEA56 /* Liferay Mobile SDK Sample iOS-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Liferay Mobile SDK Sample iOS-Prefix.pch"; sourceTree = "<group>"; };
 		CC2D9928187B7BC400DEEA56 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		CC2D992B187B7C4000DEEA56 /* Liferay Mobile SDK Sample iOS-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Liferay Mobile SDK Sample iOS-Info.plist"; sourceTree = "<group>"; };
@@ -54,7 +43,6 @@
 		CCE0A0221872213C00B1D023 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		CCE0A0231872213C00B1D023 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		CCE0A0251872213C00B1D023 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = SOURCE_ROOT; };
-		CCE0A02B1872213C00B1D023 /* Liferay Mobile SDK Sample iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Liferay Mobile SDK Sample iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCE967BF187C72EA006272B5 /* Contact.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Contact.h; path = Model/Contact.h; sourceTree = "<group>"; };
 		CCE967C0187C72EA006272B5 /* Contact.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Contact.m; path = Model/Contact.m; sourceTree = "<group>"; };
 		CCE967C2187C933F006272B5 /* DetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DetailsViewController.h; path = Controller/DetailsViewController.h; sourceTree = "<group>"; };
@@ -74,18 +62,18 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CCE0A0281872213C00B1D023 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				CCE0A02F1872213C00B1D023 /* UIKit.framework in Frameworks */,
-				CCE0A02E1872213C00B1D023 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2010EBEF29B3DA12BFF1DDAC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				61D9D5255835EFF9BE2744D7 /* Pods.debug.xcconfig */,
+				545E96D4B9F0B40CAA3FA214 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		CC694B99187C3AAF00EDA039 /* Callback */ = {
 			isa = PBXGroup;
 			children = (
@@ -132,7 +120,7 @@
 				CCE0A0191872213C00B1D023 /* Liferay Mobile SDK Sample iOS */,
 				CCE0A0121872213C00B1D023 /* Frameworks */,
 				CCE0A0111872213C00B1D023 /* Products */,
-				A9F0F08DB9394889A5A1CED3 /* Pods.xcconfig */,
+				2010EBEF29B3DA12BFF1DDAC /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -140,7 +128,6 @@
 			isa = PBXGroup;
 			children = (
 				CCE0A0101872213C00B1D023 /* Liferay Mobile SDK Sample iOS.app */,
-				CCE0A02B1872213C00B1D023 /* Liferay Mobile SDK Sample iOSTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -195,24 +182,6 @@
 			productReference = CCE0A0101872213C00B1D023 /* Liferay Mobile SDK Sample iOS.app */;
 			productType = "com.apple.product-type.application";
 		};
-		CCE0A02A1872213C00B1D023 /* Liferay Mobile SDK Sample iOSTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = CCE0A03F1872213C00B1D023 /* Build configuration list for PBXNativeTarget "Liferay Mobile SDK Sample iOSTests" */;
-			buildPhases = (
-				CCE0A0271872213C00B1D023 /* Sources */,
-				CCE0A0281872213C00B1D023 /* Frameworks */,
-				CCE0A0291872213C00B1D023 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				CCE0A0311872213C00B1D023 /* PBXTargetDependency */,
-			);
-			name = "Liferay Mobile SDK Sample iOSTests";
-			productName = "Liferay Mobile SDK Sample iOSTests";
-			productReference = CCE0A02B1872213C00B1D023 /* Liferay Mobile SDK Sample iOSTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -221,11 +190,6 @@
 			attributes = {
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "Liferay Inc.";
-				TargetAttributes = {
-					CCE0A02A1872213C00B1D023 = {
-						TestTargetID = CCE0A00F1872213C00B1D023;
-					};
-				};
 			};
 			buildConfigurationList = CCE0A00B1872213C00B1D023 /* Build configuration list for PBXProject "Liferay Mobile SDK Sample iOS" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -240,7 +204,6 @@
 			projectRoot = "";
 			targets = (
 				CCE0A00F1872213C00B1D023 /* Liferay Mobile SDK Sample iOS */,
-				CCE0A02A1872213C00B1D023 /* Liferay Mobile SDK Sample iOSTests */,
 			);
 		};
 /* End PBXProject section */
@@ -251,13 +214,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				CCE0A0261872213C00B1D023 /* Images.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CCE0A0291872213C00B1D023 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,7 +232,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		CA13E3A25DCF46D4A04AC2BA /* Check Pods Manifest.lock */ = {
@@ -312,22 +268,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CCE0A0271872213C00B1D023 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		CCE0A0311872213C00B1D023 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = CCE0A00F1872213C00B1D023 /* Liferay Mobile SDK Sample iOS */;
-			targetProxy = CCE0A0301872213C00B1D023 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		CCE0A03A1872213C00B1D023 /* Debug */ = {
@@ -402,7 +343,7 @@
 		};
 		CCE0A03D1872213C00B1D023 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A9F0F08DB9394889A5A1CED3 /* Pods.xcconfig */;
+			baseConfigurationReference = 61D9D5255835EFF9BE2744D7 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -416,7 +357,7 @@
 		};
 		CCE0A03E1872213C00B1D023 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A9F0F08DB9394889A5A1CED3 /* Pods.xcconfig */;
+			baseConfigurationReference = 545E96D4B9F0B40CAA3FA214 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -425,46 +366,6 @@
 				INFOPLIST_FILE = "Liferay Mobile SDK Sample iOS-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
-			};
-			name = Release;
-		};
-		CCE0A0401872213C00B1D023 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Liferay Mobile SDK Sample iOS.app/Liferay Mobile SDK Sample iOS";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Liferay Mobile SDK Sample iOS/Liferay Mobile SDK Sample iOS-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "Liferay Mobile SDK Sample iOSTests/Liferay Mobile SDK Sample iOSTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Debug;
-		};
-		CCE0A0411872213C00B1D023 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Liferay Mobile SDK Sample iOS.app/Liferay Mobile SDK Sample iOS";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Liferay Mobile SDK Sample iOS/Liferay Mobile SDK Sample iOS-Prefix.pch";
-				INFOPLIST_FILE = "Liferay Mobile SDK Sample iOSTests/Liferay Mobile SDK Sample iOSTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
 			};
 			name = Release;
 		};
@@ -485,15 +386,6 @@
 			buildConfigurations = (
 				CCE0A03D1872213C00B1D023 /* Debug */,
 				CCE0A03E1872213C00B1D023 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		CCE0A03F1872213C00B1D023 /* Build configuration list for PBXNativeTarget "Liferay Mobile SDK Sample iOSTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				CCE0A0401872213C00B1D023 /* Debug */,
-				CCE0A0411872213C00B1D023 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
