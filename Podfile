@@ -1,1 +1,1 @@
-pod "Liferay-iOS-SDK", "6.2.0.11"
+pod "Liferay-iOS-SDK", "7.0.4"

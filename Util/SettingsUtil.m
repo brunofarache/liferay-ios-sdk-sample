@@ -1,4 +1,5 @@
 #import "SettingsUtil.h"
+#import "LRBasicAuthentication.h"
 
 @implementation SettingsUtil
 
@@ -41,8 +42,12 @@ static NSUserDefaults *_preferences;
 }
 
 + (LRSession *)getSession {
-	return [[LRSession alloc] initWithServer:[self getServer]
-		username:[self getLogin] password:[self getPassword]];
+	NSString *server = [self getServer];
+
+	id<LRAuthentication> auth = [[LRBasicAuthentication alloc]
+		initWithUsername:[self getLogin] password:[self getPassword]];
+
+	return [[LRSession alloc] initWithServer:server authentication:auth];
 }
 
 @end
